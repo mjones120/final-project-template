@@ -16,10 +16,20 @@ class UserController extends Controller
     }
 
     public function saveUser() {
+        $userModel = new User();
+        header("Content-Type: application/json");
+        $users = $userModel->saveUser($_POST);
+        echo json_encode($users);
+        exit();
 
     }
 
     public function viewUsers() {
+        $userModel = new User();
+        header("Content-Type: application/json");
+        $users = $userModel->viewUsers($_GET);
+        echo json_encode($users);
+        exit();
         
     }
 
