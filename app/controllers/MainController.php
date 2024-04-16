@@ -19,17 +19,16 @@ class MainController extends Controller
     public function projects()
     {
         include '../public/assets/views/main/projects.html';
-        $this->view('../public/assets/views/main/projects.html', true);
+        
     }
     public function contact()
     {
         include '../public/assets/views/main/contact.html';
-        $this->view('../public/assets/views/main/contact.html', true);
+    
     }
     public function learn()
     {
         include '../public/assets/views/main/learn.html';
-        $this->view('../public/assets/views/main/learn.html', true);
     }
 
 
