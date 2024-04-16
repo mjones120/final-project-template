@@ -12,23 +12,23 @@ $routes = [
         'controller' => UserController::class,
         'GET' => 'getUsers',
     ],
-    'homepage' => [
+    'homepage.html' => [
         'controller' => MainController::class,
         'GET' => 'homepage'
     ],
-    'certs' => [
+    'certs.html' => [
         'controller' => MainController::class,
         'GET' => 'certs'
     ],
-    'projects' => [
+    'projects.html' => [
         'controller' => MainController::class,
         'GET' => 'projects'
     ],
-    'contact' => [
+    'contact.html' => [
         'controller' => MainController::class,
         'GET' => 'contact'
     ],
-    'learn' => [
+    'learn.html' => [
         'controller' => MainController::class,
         'GET' => 'learn'
     ]
