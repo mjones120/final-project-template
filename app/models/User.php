@@ -8,7 +8,7 @@ class User
 {
     use Database;
 
-    protected $table = 'users';
+    protected $table = 'contacts';
 
     public function getAllUsers() {
         return $this->findAll();
