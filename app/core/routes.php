@@ -15,22 +15,22 @@ $routes = [
     ],
     'homepage.html' => [
         'controller' => MainController::class,
-        'GET' => 'homepage'
+        'GET' => 'homepage.html'
     ],
     'certs.html' => [
         'controller' => MainController::class,
-        'GET' => 'certs'
+        'GET' => 'certs.html'
     ],
     'projects.html' => [
         'controller' => MainController::class,
-        'GET' => 'projects'
+        'GET' => 'projects.html'
     ],
     'contact.html' => [
         'controller' => MainController::class,
-        'GET' => 'contact'
+        'GET' => 'contact.html'
     ],
     'learn.html' => [
         'controller' => MainController::class,
-        'GET' => 'learn'
+        'GET' => 'learn.html'
     ]
 ];

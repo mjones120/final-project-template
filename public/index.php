@@ -15,7 +15,6 @@ require_once __DIR__ . '/helpers.php';
 $router = new Router($routes);
 $router->serveRoute();
 
-$uri = strtok($_SERVER['REQUEST_URI'], '?');
 
 
 ?>
