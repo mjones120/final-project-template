@@ -59,16 +59,45 @@
        
         </nav>
 
-<form onsubmit="return handleFormSubmit(event)">
+<form>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
     <div class="mb-3">
-      <label for="exampleInputName1" class="form-label">First & Last Name </label>
+      <label for="exampleInputName" class="form-label">First & Last Name </label>
       <input type="name" class="form-control" id="exampleInputName1">
     </div>
     <button type="submit" class="btn btn-primary" >Submit</button>
 
   </form>
+
+  <script>
+    $(document).ready(function() {
+
+      $('#mb-3').on('submit', function (e) {
+        e.preventDefault();
+        const email = $('#exampleInputEmail').val();
+        const name = $('#exampleInputName').val();
+        const data = {
+          email: email,
+          name: name
+        };
+        $.ajax({
+          url: `http://localhost:8888/contact`,
+          type: "POST",
+          dataType: "json",
+          data: JSON.stringify(data),
+          contentType: "application/json",
+          success: function (data) {
+            console.log(data);
+          },
+          error: function (error) {
+            console.log(error);
+          }
+      });
+      });
+    });
+
+  </script>
   </html>
