@@ -6,7 +6,7 @@ use app\core\Model;
 class User
 
 {
-    use Model;
+    use Database;
 
     protected $table = 'users';
 
