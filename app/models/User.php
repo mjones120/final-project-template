@@ -14,8 +14,13 @@ class User
     public function getAllUsers() {
         return $this->findAll();
     }
-    public function saveUser($data) {
-        return $this->save($data);
+    public function saveUser() {
+        $query = "INSERT INTO $this->table (email, name) VALUES (:email, :name)";
+        $data = [
+            ':email' => $_POST['email'],
+            ':name' => $_POST['name']
+        ];
+        return $this->query($query, $data);
     }
    
 
