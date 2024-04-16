@@ -35,6 +35,10 @@ $routes = [
     ],
     'contacts.html' => [
         'controller' => MainController::class,
-        'GET' => 'contacts'
+        'GET' => 'contact'
+    ],
+    'submit.html' => [
+        'controller' => MainController::class,
+        'GET' =>'submit'
     ]
 ];
