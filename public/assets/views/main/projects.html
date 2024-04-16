@@ -62,8 +62,8 @@
     <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   <div class="container">
-    <h1 class="mt-5"> HisLa Connect App Prototype</h1>
-    <p class="lead">My Leadership Academy group and I created an app prototype called HisLa Connect which is a resource hub targeted towards Hispanic and Latino adults who wish to gain insight on various industries and careers they may be interested in. This prototype was created and executed utilizing Figma. The app included features such as a resource hub, discussion boards, settings, a meet the team page, and a dark and light mode. I worked primarily as the UI/UX designer in which I helped bring the vision of the app to life utilizing Canva and Goodnotes. I designed how the screens would look, how users would interact with the app, and ensured users would be able to navigate the app with ease. I also helped with the front-end development of the app in which I worked on creating the prototype in Figma.</p>
+    <h1 class="p-title"> HisLa Connect App Prototype</h1>
+    <p class="desc">My Leadership Academy group and I created an app prototype called HisLa Connect which is a resource hub targeted towards Hispanic and Latino adults who wish to gain insight on various industries and careers they may be interested in. This prototype was created and executed utilizing Figma. The app included features such as a resource hub, discussion boards, settings, a meet the team page, and a dark and light mode. I worked primarily as the UI/UX designer in which I helped bring the vision of the app to life utilizing Canva and Goodnotes. I designed how the screens would look, how users would interact with the app, and ensured users would be able to navigate the app with ease. I also helped with the front-end development of the app in which I worked on creating the prototype in Figma.</p>
     <p>Navigate to the applications repository <a href="https://github.com/kreyes21/HisLaConnect">here</a></p>
     <img src="https://media.licdn.com/dms/image/D4E22AQGvCDDo1zyNjw/feedshare-shrink_800/0/1702424537968?e=1715817600&v=beta&t=7A-FFJ40H2o625u11KAMNYZ-EGaLRGPkAuHCEhrXlVM" alt="HisLa Connect Logo" class="center" />
   </div>
@@ -73,5 +73,31 @@
   <div class="container">
   </div>
 </footer>
+
+<script> 
+
+$(document).ready(function () {
+  $.ajax({
+    url: `http:localhost::8888/projects`,
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+      $('#container').html('')
+      $.each(data, function(key,value)){
+        $('#container').append(`
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">${value.title}</h5>
+            <p class="card-text">${value.description}</p>
+            <a href="${value.url}" class="btn btn-primary">View Project</a>
+          </div>
+        </div>`)
+      });
+    }
+  });
+}
+  </script>
+
 </html>
+
 
