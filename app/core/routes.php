@@ -35,6 +35,6 @@ $routes = [
     ],
     'submit.html' => [
         'controller' => MainController::class,
-        'GET' =>'submit'
+        'GET' => 'submit'
     ]
 ];
