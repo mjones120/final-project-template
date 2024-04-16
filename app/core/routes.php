@@ -32,5 +32,9 @@ $routes = [
     'learn.html' => [
         'controller' => MainController::class,
         'GET' => 'learn'
+    ],
+    'contacts.html' => [
+        'controller' => MainController::class,
+        'GET' => 'contacts'
     ]
 ];
