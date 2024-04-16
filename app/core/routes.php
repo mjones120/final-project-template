@@ -33,7 +33,7 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'learn'
     ],
-    'contacts.html' => [
+    'contact.html' => [
         'controller' => MainController::class,
         'GET' => 'contact'
     ],
