@@ -17,15 +17,6 @@ $router->serveRoute();
 
 $uri = strtok($_SERVER['REQUEST_URI'], '?');
 
-if($uri === '/homepage' && $_SERVER['REQUEST_METHOD']=== 'GET')
-{
-    $controller = new MainController();
-    $controller->homepage();
-}
-if($uri === '/certs' && $_SERVER['REQUEST_METHOD']=== 'GET')
-{
-    $controller = new MainController();
-    $controller->certs();
-}
+
 ?>
 
