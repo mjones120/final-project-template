@@ -1,6 +1,7 @@
 <?php
 
 use app\controllers\UserController;
+use app\controllers\MainController;
 
 $routes = [
     'users' => [
