@@ -39,6 +39,8 @@ $routes = [
         'controller' => UserController::class,
         'GET' => 'submit'
     ],
-    
-    include '../public/assets/views/404.html';
+    '404.html' => [
+        'controller' => MainController::class,
+        'GET' => 'notFound'
+    ]
 ];
