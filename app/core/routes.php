@@ -34,14 +34,11 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'learn'
     ],
-    'submit.html' => [
-        'controller' => MainController::class,
-        'GET' => 'submit'
-    ],
     '/contacts'=>
     [
         'controller' => UserController::class,
-        'GET' => 'userAddView'
-    ]
-
+        'GET' => 'submit'
+    ],
+    
+    include '../public/assets/views/404.html';
 ];
