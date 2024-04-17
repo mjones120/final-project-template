@@ -59,7 +59,7 @@
        
         </nav>
 
-<form>
+<form id="form-id">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -75,22 +75,23 @@
   <script>
     $(document).ready(function() {
 
-      $('#mb-3').on('submit', function (e) {
+      $('#form-id').on('submit', function (e) {
         e.preventDefault();
         const email = $('#exampleInputEmail1').val();
         const name = $('#exampleInputName').val();
         const data = {
-          email: email,
-          name: name
+          email,
+          name,
         };
         $.ajax({
           url: `http://localhost:8888/contact`,
           type: "POST",
+          data: data,
           dataType: "json",
-          data: JSON.stringify(data),
           contentType: "application/json",
           success: function (data) {
             console.log(data);
+            window.location.replace("submit.html");
           },
           error: function (error) {
             console.log(error);
