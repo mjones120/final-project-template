@@ -28,6 +28,7 @@ $routes = [
     'contact.html' => [
         'controller' => MainController::class,
         'GET' => 'contact',
+        'POST' =>'submit'
     ],
     'learn.html' => [
         'controller' => MainController::class,
@@ -44,8 +45,7 @@ $routes = [
     '/contacts'=>
     [
         'controller' => UserController::class,
-        'GET' => 'getUsers',
-        'POST' =>'saveUser'
+        'GET' => 'public/assets/views/submit.html'
     ]
 
 ];
