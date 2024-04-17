@@ -38,11 +38,10 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'submit'
     ],
-    'http://localhost:8888/contacts' =>
+    '/contacts'=>
     [
         'controller' => UserController::class,
-        'GET' => 'userAddView',
-        'POST' => 'usersView'
+        'GET' => 'userAddView'
     ]
 
 ];
