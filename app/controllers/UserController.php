@@ -63,17 +63,16 @@ class UserController extends Controller
         exit();
     }
        
-        public function userAddView()
-        {
-            include '.. public/assets/views/main/contact.html';
-            exit();
+       
+
+        public function contact()
+        {   
+            include '../public/assets/views/main/contact.html'; 
         }
-        public function usersView()
+        public function submit()
         { 
-            '.. public/assets/views/main/submit.html';  
-            exit();
+            include '../public/assets/views/main/submit.html'; 
         }
-        o
 
     }
 
