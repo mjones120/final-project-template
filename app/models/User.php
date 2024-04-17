@@ -22,6 +22,7 @@ class User
         $query = "INSERT INTO $this->table (email, name) VALUES (:email, :name)";
         return $this->queryWithParams($query, $inputData);
     }
+   
 
 
    
