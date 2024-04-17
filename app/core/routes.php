@@ -13,7 +13,7 @@ $routes = [
         'controller' => UserController::class,
         'GET' => 'getUsers',
     ],
-    'homepage.html' => [
+    'homepage' => [
         'controller' => MainController::class,
         'GET' => 'homepage'
     ],
@@ -21,11 +21,11 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'certs'
     ],
-    'projects' => [
+    'projects.html' => [
         'controller' => MainController::class,
         'GET' => 'projects'
     ],
-    'contacts' => [
+    'contacts.html' => [
         'controller' => MainController::class,
         'GET' => 'contact',
         'POST' =>'usersAddView'
