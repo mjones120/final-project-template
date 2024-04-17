@@ -32,7 +32,7 @@ $routes = [
     'submit'=>[
         'controller' => UserController::class,
         'GET' => 'getUsers',
-        'POST' =>'saveUsers'
+        'POST' =>'saveUser'
     ],
 
     'learn' => [
