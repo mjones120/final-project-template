@@ -11,7 +11,8 @@ class User
     protected $table = 'contacts';
 
     public function getAllUsers() {
-        return $this->findAll();
+        $query = "select * from users";
+        return $this->fetchAll($query);
     }
     public function getUserById($id) {
         $query = "selecr * from users where id = $id";
