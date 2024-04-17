@@ -73,6 +73,7 @@ class UserController extends Controller
             '.. public/assets/views/main/submit.html';  
             exit();
         }
+        o
 
     }
 
