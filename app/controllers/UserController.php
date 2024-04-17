@@ -10,15 +10,6 @@ class UserController extends Controller
         $errors = [];
         $name= $inputData['name'];
         $email= $inputData['email'];
-
-        if ($name) {
-            $name = htmlspecialchars($name, ENT_QUOTES|ENT_HTML5, 'UTF-8', true);
-            if (strlen($name) < 2) {
-                $errors['nameTooShort'] = 'name is too short';
-            }
-        } else {
-            $errors['requiredName'] = 'name is required';
-        }
         if($email){
             $email = htmlspecialchars($email, ENT_QUOTES|ENT_HTML5, 'UTF-8', true);
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -28,6 +19,16 @@ class UserController extends Controller
         else {
             $errors['requiredEmail'] = 'email is required';
         }
+        
+        if ($name) {
+            $name = htmlspecialchars($name, ENT_QUOTES|ENT_HTML5, 'UTF-8', true);
+            if (strlen($name) < 2) {
+                $errors['nameTooShort'] = 'name is too short';
+            }
+        } else {
+            $errors['requiredName'] = 'name is required';
+        }
+        
 
         if (count($errors)) {
             http_response_code(400);
