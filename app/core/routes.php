@@ -34,6 +34,11 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'learn'
     ],
+    'submit.html'=>[
+        'controller' => MainController::class,
+        'GET' =>'submit',
+        'POST' =>'submit'
+    ]
  
     '404.html' => [
         'controller' => MainController::class,
