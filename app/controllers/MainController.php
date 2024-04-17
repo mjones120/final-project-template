@@ -30,11 +30,6 @@ class MainController extends Controller
     {
         include '../public/assets/views/main/learn.html';
     }
-    public function submit()
-    {
-        include '../public/assets/views/main/submit.html';
-    }
-
 
     public function notFound()
     {
