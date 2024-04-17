@@ -6,24 +6,6 @@ use app\models\User;
 
 class UserController extends Controller
 {
-    public function getUsers()
-    {
-        $userModel = new User();
-        header("Content-Type: application/json");
-        $users = $userModel->getAllUsers();
-        echo json_encode($users);
-        exit();
-    }
-
-    public function saveUser() {
-        $userModel = new User();
-        header("Content-Type: application/json");
-        $users = $userModel->saveUser($_POST);
-        echo json_encode($users);
-        exit();
-
-    }
-
     public function validateUser($inputData) {
         $errors = [];
         $name= $inputData['name'];
@@ -46,5 +28,51 @@ class UserController extends Controller
             'name' => $name,
         ];
     }
+    public function getUsers($id)
+    {
+        $userModel = new User();
+        header("Content-Type: application/json");
+        if($id){
+            $user = $userModel->getUserById($id);
 
-}
+        }
+        else{
+                    $users = $userModel->getAllUsers();
+            }
+        echo json_encode($users);
+        exit();
+    }
+
+    public function saveUser() {
+        $inputData=
+        [
+            'email' => $_POST['email'] ? $_POST['email']: false,
+            'name' => $_POST['name'] ? $_POST['name']: false,
+        ];
+        $userData = $this->validateUser($inputData);
+
+        $user = new User();
+        $user-> saveUser([
+            'email' => $userData['email'],
+            'name' => $userData['name'],
+        ]);
+        http_response_code(200);
+        echo json_encode([
+            'success'=> true
+        ]);
+        exit();
+    }
+       
+        public function userAddView()
+        {
+            include '.. public/assets/views/main/content.html';
+        }
+        public function usersView()
+        { 
+            '.. public/assets/views/main/submit.html';  
+        }
+
+    }
+
+   
+

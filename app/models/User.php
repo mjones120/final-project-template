@@ -1,7 +1,6 @@
 <?php
 
 namespace app\models;
-use app\core\Model;
 use app\core\Database;
 
 class User
