@@ -17,28 +17,28 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'homepage'
     ],
-    'certs.html' => [
+    'certs' => [
         'controller' => MainController::class,
         'GET' => 'certs'
     ],
-    'projects.html' => [
+    'projects' => [
         'controller' => MainController::class,
         'GET' => 'projects'
     ],
-    'contacts.html' => [
+    'contact' => [
         'controller' => MainController::class,
         'GET' => 'contact',
         'POST' =>'usersAddView'
     ],
-    'learn.html' => [
+    'learn' => [
         'controller' => MainController::class,
         'GET' => 'learn'
     ],
-    'submit.html'=> [ 
+    'submit'=> [ 
         'controller' => UserController::class,
         'POST' =>'submit'
     ],
-    '404.html' => [
+    '404' => [
         'controller' => MainController::class,
         'GET' => 'notFound'
     ],
