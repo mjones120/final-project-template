@@ -43,7 +43,7 @@ class UserController extends Controller
         exit();
     }
 
-    public function saveUser() {
+    public function submit() {
         $inputData=
         [
             'email' => $_POST['email'] ? $_POST['email']: false,
