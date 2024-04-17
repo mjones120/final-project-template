@@ -45,7 +45,7 @@ $routes = [
     '/contacts'=>
     [
         'controller' => UserController::class,
-        'GET' => 'public/assets/views/submit.html'
+        'GET' => 'submit.html'
     ]
 
 ];
