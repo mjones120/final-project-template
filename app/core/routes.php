@@ -28,14 +28,13 @@ $routes = [
     'contact' => [
         'controller' => UserController::class,
         'GET' => 'contact',
-        'POST'=> 'saveUser'
+        'POST'=> 'contact',
     ],
-    'submit'=>[
+    'submit'=> [ 
         'controller' => UserController::class,
         'GET' => 'getUsers',
         'POST' =>'saveUser'
     ],
-
     'learn' => [
         'controller' => MainController::class,
         'GET' => 'learn'
