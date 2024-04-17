@@ -42,9 +42,6 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'notFound'
     ],
-    '/contacts'=> [
-        'controller' => UserController::class,
-        'POST' => 'usersView'
-    ]
+    
 
 ];
