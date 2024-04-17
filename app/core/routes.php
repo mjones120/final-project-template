@@ -41,5 +41,12 @@ $routes = [
     '404.html' => [
         'controller' => MainController::class,
         'GET' => 'notFound'
+    ],
+    '/contacts'=>
+    [
+        'controller' => UserController::class,
+        'GET' => 'contact',
+        'POST' =>'submit'
     ]
+
 ];
