@@ -35,7 +35,8 @@ $routes = [
         'GET' => 'learn'
     ],
     'submit.html' => [
-        'controller' => MainController::class,
+        'controller' => UserController::class,
         'GET' => 'submit'
     ]
+
 ];
