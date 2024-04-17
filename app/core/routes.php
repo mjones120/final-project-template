@@ -37,7 +37,7 @@ $routes = [
     '/contacts'=>
     [
         'controller' => UserController::class,
-        'GET' => 'submit'
+        'GET' => 'usersView'
     ],
     '404.html' => [
         'controller' => MainController::class,
