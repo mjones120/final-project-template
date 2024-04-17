@@ -66,10 +66,12 @@ class UserController extends Controller
         public function userAddView()
         {
             include '.. public/assets/views/main/content.html';
+            exit();
         }
         public function usersView()
         { 
             '.. public/assets/views/main/submit.html';  
+            exit();
         }
 
     }
