@@ -65,7 +65,7 @@ class UserController extends Controller
        
         public function userAddView()
         {
-            include '.. public/assets/views/main/content.html';
+            include '.. public/assets/views/main/contact.html';
             exit();
         }
         public function usersView()
