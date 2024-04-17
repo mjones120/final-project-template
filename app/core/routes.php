@@ -28,18 +28,13 @@ $routes = [
     'contact.html' => [
         'controller' => MainController::class,
         'GET' => 'contact',
-        'POST' => 'contact'
+        'POST' => 'submit'
     ],
     'learn.html' => [
         'controller' => MainController::class,
         'GET' => 'learn'
     ],
-    //save user
-    //'/contacts'=>
-    //[
-    //    'controller' => UserController::class,
-    //    'POST' => 'saveUser'
-    //],
+ 
     '404.html' => [
         'controller' => MainController::class,
         'GET' => 'notFound'
