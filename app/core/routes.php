@@ -34,10 +34,13 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'learn'
     ],
+    //save user
+
+
     '/contacts'=>
     [
         'controller' => UserController::class,
-        'GET' => 'usersView'
+        'POST' => 'saveUser'
     ],
     '404.html' => [
         'controller' => MainController::class,
