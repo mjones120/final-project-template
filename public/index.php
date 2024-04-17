@@ -1,5 +1,5 @@
 <?php
-
+require_once '..app/core/Database.php';
 require_once '../app/core/init.php';
 require_once '../app/core/routes.php';
 $env = parse_ini_file('../.env');
