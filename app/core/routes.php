@@ -30,6 +30,12 @@ $routes = [
         'GET' => 'contact',
         'POST' =>'submit'
     ],
+    'submit'=>[
+        'controller' => UserController::class,
+        'GET' => 'contact',
+        'POST' =>'submit'
+    ],
+
     'learn' => [
         'controller' => MainController::class,
         'GET' => 'learn'
