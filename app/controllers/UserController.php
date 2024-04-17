@@ -9,6 +9,7 @@ class UserController extends Controller
     public function validateUser($inputData) {
         $errors = [];
         $name= $inputData['name'];
+        $email= $inputData['email'];
 
         if ($name) {
             $name = htmlspecialchars($name, ENT_QUOTES|ENT_HTML5, 'UTF-8', true);
@@ -18,6 +19,15 @@ class UserController extends Controller
         } else {
             $errors['requiredName'] = 'name is required';
         }
+        if($email){
+            $email = htmlspecialchars($email, ENT_QUOTES|ENT_HTML5, 'UTF-8', true);
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $errors['invalidEmail'] = 'invalid email';
+            }
+        }
+        else {
+            $errors['requiredEmail'] = 'email is required';
+        }
 
         if (count($errors)) {
             http_response_code(400);
@@ -26,6 +36,7 @@ class UserController extends Controller
         }
         return [
             'name' => $name,
+            'email' => $email,
         ];
     }
     public function getUsers($id)
