@@ -43,7 +43,7 @@ class UserController extends Controller
         exit();
     }
 
-    public function submit() {
+    public function saveUser() {
         $inputData=
         [
             'email' => $_POST['email'] ? $_POST['email']: false,
@@ -69,7 +69,7 @@ class UserController extends Controller
         {   
             include '../public/assets/views/main/contact.html'; 
         }
-        public function submit()
+        public function submitView()
         { 
             include '../public/assets/views/main/submit.html'; 
         }
