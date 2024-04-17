@@ -2,12 +2,16 @@ CREATE TABLE `projects` (
   `title` varchar(255) NOT NULL,
   `description` text,
   `image` blob NOT NULL,
-  `id` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  primary key (`id`)
 )
 
 CREATE TABLE `contacts` (
+
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(254) NOT NULL,
-  `name` varchar(254) NOT NULL
+  `name` varchar(254) NOT NULL,
+  primary key (`id`)
 )
 
 insert into projects (title, description, image, id)
