@@ -21,7 +21,7 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'certs'
     ],
-    'projects.html' => [
+    'projects' => [
         'controller' => MainController::class,
         'GET' => 'projects'
     ],
