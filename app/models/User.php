@@ -22,6 +22,7 @@ class User
         ];
         return $this->query($query, $data);
     }
+    
    
 
 }
