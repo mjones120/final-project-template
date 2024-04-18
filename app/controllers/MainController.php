@@ -16,11 +16,7 @@ class MainController extends Controller
     {
         include '../public/assets/views/main/certs.html';
     }
-    public function projects()
-    {
-        include '../public/assets/views/main/projects.html';
-        
-    }
+    
     public function contact()
     {
         include '../public/assets/views/main/contact.html';

@@ -75,9 +75,9 @@ $(document).ready(function () {
     type: "GET",
     dataType: "json",
     success: function (data) {
-      $('#p-title').html('')
+      $('#title').html('')
       $.each(data, function(key, value) {
-        $('#p-title').append(`
+        $('#title').append(`
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">${value.title}</h5>

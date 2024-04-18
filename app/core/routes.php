@@ -2,6 +2,7 @@
 
 use app\controllers\UserController;
 use app\controllers\MainController;
+use app\controllers\ProjectController;
 
 $routes = [
 
@@ -14,7 +15,7 @@ $routes = [
         'GET' => 'certs'
     ],
     'projects' => [
-        'controller' => MainController::class,
+        'controller' => ProjectController::class,
         'GET' => 'projects'
     ],
     'contact' => [
