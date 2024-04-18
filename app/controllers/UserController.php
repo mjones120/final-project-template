@@ -79,7 +79,7 @@ class UserController extends Controller
         {   
             include '../public/assets/views/main/contact.html'; 
         }
-        public function submitView()
+        public function submit()
         { 
             include '../public/assets/views/main/submit.html'; 
         }
