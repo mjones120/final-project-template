@@ -33,7 +33,7 @@ $routes = [
     '404' => [
         'controller' => MainController::class,
         'GET' => 'notFound'
-    ],
+    ]
     
 
 ];
