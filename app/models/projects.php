@@ -11,7 +11,7 @@ class Projects
 
      public function getAllProjects() {
          $query = "select * from projects";
-         return $this->fetchAll($query);
+         return $this->findAll($query);
      }
      public function getProjectById($id) {
          $query = "select * from projects where id = $id";
@@ -22,5 +22,10 @@ class Projects
          $query = "INSERT INTO $this->table (title, description) VALUES (:title, :description);";
          return $this->query($query, $inputData);
      }
+     public function findAll()
+    {
+        $query = "select * from $this->table";
+        return $this->query($query);
+    }
 }
 

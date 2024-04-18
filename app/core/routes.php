@@ -18,7 +18,7 @@ $routes = [
         'controller' => ProjectController::class,
         'GET' => 'projects'
     ],
-    'api/projects' => [
+    'projects-data' => [
         'controller' => ProjectController::class,
         'GET' => 'getProject'
     ],

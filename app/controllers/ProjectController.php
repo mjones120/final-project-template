@@ -11,7 +11,7 @@ class ProjectController extends Controller
     {
         $projects = new Projects();
         header('Content-Type: application/json');
-        $projects = $projects->getAllProjects();
+        $projects = $projects->findAll();
         echo json_encode($projects);
         exit();
     }
