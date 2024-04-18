@@ -4,7 +4,6 @@ namespace app\models;
 
 use app\core\Database;
 
-
 class Projects
 {
     use Database;
