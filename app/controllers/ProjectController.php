@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\core\Controller;
 use app\models\Projects;
 
 class ProjectController extends Controller
