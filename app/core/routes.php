@@ -17,7 +17,7 @@ $routes = [
     'projects' => [
         'controller' => ProjectController::class,
         'GET' => 'projects',
-        'POST'=> 'GetProject'
+        'PUT'=> 'GetProject'
     ],
     'contact' => [
         'controller' => UserController::class,
