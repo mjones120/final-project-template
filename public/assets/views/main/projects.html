@@ -80,11 +80,23 @@ $(document).ready(function () {
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">${value.title}</h5>
-            <p class="card-text">${value.description}</p>
-            <img> ${value.image}</img>
           </div>
         </div>
         `)
+        $('description').append(`
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">${value.description}</h5>
+          </div>
+        </div>
+        `)
+        $('image').append(`
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">${value.image}</h5>
+          </div>
+          `)
+
       });
     }
   });
