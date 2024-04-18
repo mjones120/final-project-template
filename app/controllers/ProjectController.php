@@ -12,7 +12,8 @@ class ProjectController extends Controller
         $projects = new Projects();
         header('Content-Type: application/json');
         $projects = $projects->getAllProjects();
-        $this->view('../public/assets/views/main/projects.php', ['projects' => $projects]);
+        echo json_encode($projects);
+        exit();
     }
     public function getProjectById($id)
     {
