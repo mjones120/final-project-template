@@ -4,15 +4,7 @@ use app\controllers\UserController;
 use app\controllers\MainController;
 
 $routes = [
-    'users' => [
-        'controller' => UserController::class,
-        'GET' => 'getUsers',
-        'POST' => 'saveUsers'
-    ],
-    'view-users' => [
-        'controller' => UserController::class,
-        'GET' => 'getUsers',
-    ],
+
     'homepage' => [
         'controller' => MainController::class,
         'GET' => 'homepage'
