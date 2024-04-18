@@ -19,7 +19,7 @@ class UserController extends Controller
         else {
             $errors['requiredEmail'] = 'email is required';
         }
-        
+
         if ($name) {
             $name = htmlspecialchars($name, ENT_QUOTES|ENT_HTML5, 'UTF-8', true);
             if (strlen($name) < 2) {
@@ -74,8 +74,6 @@ class UserController extends Controller
         ]);
         exit();
     }
-       
-       
 
         public function contact()
         {   

@@ -16,7 +16,7 @@ class User
     }
     public function getUserById($id) {
         $query = "selecr * from users where id = $id";
-        return $this->queryWithParams($query, ['id' => $id]);
+        return $this->query($query, ['id' => $id]);
     }
     public function saveUser($inputData) {
         $query = "INSERT INTO $this->table (email, name) VALUES (:email, :name);";
