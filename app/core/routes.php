@@ -35,6 +35,4 @@ $routes = [
         'controller' => MainController::class,
         'GET' => 'notFound'
     ]
-    
-
 ];
