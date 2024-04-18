@@ -16,8 +16,11 @@ $routes = [
     ],
     'projects' => [
         'controller' => ProjectController::class,
-        'GET' => 'projects',
-        'PUT'=> 'GetProject'
+        'GET' => 'projects'
+    ],
+    'api/projects' => [
+        'controller' => ProjectController::class,
+        'GET' => 'getProject'
     ],
     'contact' => [
         'controller' => UserController::class,
