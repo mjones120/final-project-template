@@ -20,7 +20,12 @@ class User
     }
     public function saveUser($inputData) {
         $query = "INSERT INTO $this->table (email, name) VALUES (:email, :name);";
-        return $this->queryWithParams($query, $inputData);
+        $data = [
+            'email' => $inputData['email'],
+            'name' => $inputData['name'],
+        ];
+        return $this->query($query, $data);
+    
     }
     
    
