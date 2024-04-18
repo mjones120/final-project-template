@@ -31,8 +31,7 @@ class ProjectController extends Controller
  
     public function projects()
     {
-        include '../public/assets/views/main/projects.html';
-        
+        include '../public/assets/views/main/projects.html';  
     }
 
 }
