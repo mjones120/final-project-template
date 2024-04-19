@@ -55,7 +55,7 @@
               <a class="nav-link" href="contact">Contacts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="learn">Learn About Morgan</a>
+              <a class="nav-link" href="learn">About</a>
             </li>
           
         </div>
@@ -91,18 +91,17 @@ $(document).ready(function () {
       $('#title').html('')
       $.each(data, function(key, value) {
         $('#title').append(`
+        <div class="container">
             <h2 class="mt-5">${value.title}</h2>
-          </div>
-        </div>
+            </div>
         `)
         $('#description').append(`
-        <div class="container2">
+        <div class="container">
             <p class="lead">${value.description}</p>
-          </div>
         </div>
         `)
         $('#image').append(`
-        <div class="container3">
+        <div class="container">
             <div class="image-card">${value.image}</div>
           </div>
           `)
