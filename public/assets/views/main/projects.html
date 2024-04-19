@@ -54,33 +54,31 @@
             <li class="nav-item">
               <a class="nav-link" href="contact">Contacts</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn">Learn About Morgan</a>
+            </li>
           
         </div>
        
         </nav>
     <!-- Begin page content -->
-
-    <h2>Projects</h2> 
+   
 
     <div class ="container">
-
-
-
-
-<footer class="footer mt-auto py-3">
-  <h1> Projects</h1>
-  <div class="container">
-    <h4 class="mt-5"></h4>
+  <div id="title">
+    <h2 class="mt-5"></h2>
   </div>
-  <div class="container2">
+  <div id="description">
     <p class="lead"></p>
   </div>
-  <div class="container3">
-    <img class="image-card"></img>
+  <div id="image">
+    <div class="image-card"></div>
   </div>
 
   </div>
-</footer>
+  </div>
+  <footer class="footer mt-auto py-3"></footer>
+
 
 <script> 
 
@@ -93,8 +91,7 @@ $(document).ready(function () {
       $('#title').html('')
       $.each(data, function(key, value) {
         $('#title').append(`
-        <div class="container">
-            <h4 class="mt-5">${value.title}</h4>
+            <h2 class="mt-5">${value.title}</h2>
           </div>
         </div>
         `)
@@ -106,7 +103,7 @@ $(document).ready(function () {
         `)
         $('#image').append(`
         <div class="container3">
-            <img class="image-card">${value.image}</img>
+            <div class="image-card">${value.image}</div>
           </div>
           `)
 
