@@ -20,7 +20,8 @@ $routes = [
     ],
     'projects-data' => [
         'controller' => ProjectController::class,
-        'GET' => 'getProject'
+        'GET' => 'getProject',
+        
     ],
     'contact' => [
         'controller' => UserController::class,

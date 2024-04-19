@@ -60,9 +60,25 @@
         </nav>
     <!-- Begin page content -->
 
+    <h2>Projects</h2> 
+
+    <div class ="container">
+
+
+
 
 <footer class="footer mt-auto py-3">
+  <h1> Projects</h1>
   <div class="container">
+    <h4 class="mt-5"></h4>
+  </div>
+  <div class="container2">
+    <p class="lead"></p>
+  </div>
+  <div class="container3">
+    <img class="image-card"></img>
+  </div>
+
   </div>
 </footer>
 
@@ -78,20 +94,19 @@ $(document).ready(function () {
       $.each(data, function(key, value) {
         $('#title').append(`
         <div class="container">
-          <div class="">
-            <h1 class="mt-5">${value.title}</h1>
+            <h4 class="mt-5">${value.title}</h4>
           </div>
         </div>
         `)
         $('#description').append(`
-        <div class="container">
+        <div class="container2">
             <p class="lead">${value.description}</p>
           </div>
         </div>
         `)
         $('#image').append(`
-        <div class="container">
-            <img class="card-title">${value.image}</img>
+        <div class="container3">
+            <img class="image-card">${value.image}</img>
           </div>
           `)
 
