@@ -28,7 +28,22 @@
             margin-right: auto;
             width: 30%;
         }
+        #image img {
+           display: block;
+           margin: auto;
+           width: 30%;
+        }
+      
       }
+      .page-title{
+          font-size: 40px;
+          font-weight: 700;
+          color: #000000;
+          margin-bottom: 10px;
+          padding: 20px;
+          text-align: center;
+        }
+
     </style>
     <!-- Custom styles for this template -->
     
@@ -63,7 +78,6 @@
         </nav>
     <!-- Begin page content -->
    
-
     <div class ="container">
   <div id="title">
     <h2 class="mt-5"></h2>
@@ -73,13 +87,15 @@
   </div>
   <div id="image">
     <div class="image-card">
-     <a href="https://i.imgur.com/yhvW1Fy.png" class="center"></a>
+     <src img></src>
     </div>
   </div>
 
   </div>
   </div>
-  <footer class="footer mt-auto py-3"></footer>
+  <footer class="footer mt-auto py-3">
+
+  </footer>
 
 
 <script> 
@@ -105,7 +121,7 @@ $(document).ready(function () {
         $('#image').append(`
         <div class="container">
           <div class="image-card">
-            <a href="https://i.imgur.com/yhvW1Fy.png"/${value.image}"</a>
+            <img src="${value.image}" alt="{value.title}" />
           </div>
           `)
 
