@@ -72,7 +72,9 @@
     <p class="lead"></p>
   </div>
   <div id="image">
-    <div class="image-card"></div>
+    <div class="image-card">
+     <a href="https://i.imgur.com/yhvW1Fy.png" class="center"></a>
+    </div>
   </div>
 
   </div>
@@ -88,7 +90,7 @@ $(document).ready(function () {
     type: "GET",
     dataType: "json",
     success: function (data) {
-      $('#title').html('')
+      $('#container').html('')
       $.each(data, function(key, value) {
         $('#title').append(`
         <div class="container">
@@ -102,7 +104,8 @@ $(document).ready(function () {
         `)
         $('#image').append(`
         <div class="container">
-            <div class="image-card">${value.image}</div>
+          <div class="image-card">
+            <a href="https://i.imgur.com/yhvW1Fy.png"/${value.image}"</a>
           </div>
           `)
 
